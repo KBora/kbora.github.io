@@ -49,6 +49,11 @@
     <h2>Icons</h2>
     <i class="hx-icon icon-helix"></i>
     
+    <h2>Badges</h2>
+    <span class="hx-badge is-primary">
+        <span class="hx-badge-content">Primary</span>
+      </span>
+
     <h2>Table</h2>
     <table class="hx-table">
         <thead>
@@ -99,8 +104,104 @@
             </td>
           </tr>
         </tbody>
-      </table>
+    </table>
 
+    <h2>Card with form element</h2>
+    <div class="hx-columns is-overlay">
+      <div class="hx-column is-3">
+          <div class="hx-card is-border-highlighted is-warning">
+              <div class="hx-card-content">
+                <div class="hx-columns">
+                  <div class="hx-column">
+                      <p>
+                        <strong>09:37</strong> <a href="#">@Liz</a>: Please call James Meadows asap re: his test result. 2nd time he has called.
+                      </p>
+                  </div>
+                </div>
+                  <div class="hx-input-control is-warning">
+                    <input class="hx-input" type="text" placeholder="Enter your notes">
+                    <label class="hx-label">Add Notes</label>
+                  </div>
+                  <a class="hx-button is-warning is-fullwidth">
+                    <span class="hx-icon-control"><i class="icon icon-plus-empty"></i></span>
+                    <span>Add</span>
+                  </a>
+              </div>
+            </div>
+      
+      </div>
+    </div>
+
+    <div class="hx-column is-quarter">
+        <div class="hx-card is-border-highlighted is-large">
+          <div class="hx-card-content">
+            <div class="">
+              <div><strong>Choi</strong></div>
+              <div>Ella</div>
+              <br>
+              <small>11:09 PM - 1 Jan 2016</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <h2>Buttons</h2>
+    <button class="hx-button is-primary">
+        <span>Next action</span>
+        <span class="hx-icon-control"><i class="hx-icon icon-angle-down"></i></span>
+    </button>
+
+    <h2>Stepper</h2>
+    <div class="hx-stepper">
+        <div class="hx-stepper-header">
+          <div class="hx-stepper-step is-complete">
+            <span class="hx-stepper-step-step">
+              <i class="hx-icon icon-check-empty"></i>
+            </span>
+            <div class="hx-stepper-step-label">Name of step 1</div>
+          </div>
+          <hr class="divider">
+          <div class="hx-stepper-step is-active">
+            <span class="hx-stepper-step-step">2</span>
+            <div class="hx-stepper-step-label">Name of step 2</div>
+          </div>
+          <hr class="divider">
+          <div class="hx-stepper-step">
+            <span class="hx-stepper-step-step">3</span>
+            <div class="hx-stepper-step-label">Name of step 3</div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Tabs</h2>
+      <div class="hx-tab-container">
+          <ul class="hx-nav hx-nav-tabs">
+            <li class="hx-nav-item is-active">
+              <a class="hx-nav-link is-active" href="javascript:void(0);">
+                <span>Template</span>
+              </a>
+            </li>
+            <li class="hx-nav-item">
+              <a class="hx-nav-link" href="javascript:void(0);">
+                <span>Typescript</span>
+              </a>
+            </li>
+            <li class="hx-nav-item">
+              <a class="hx-nav-link" href="javascript:void(0);">
+                <span>Javascript</span>
+              </a>
+            </li>
+            <li class="hx-nav-item">
+              <a class="hx-nav-link" href="javascript:void(0);">
+                <span>Other</span>
+              </a>
+            </li>
+          </ul>
+          <div class="hx-tab-content">
+                Tab content container
+          </div>
+        </div>
+    
   </div>
 
   <div class="hx-container is-fluid hx-bg-primary">
