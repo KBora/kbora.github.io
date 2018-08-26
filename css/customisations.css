@@ -29,7 +29,7 @@
 }
 
 .hx-card#billing-card .hx-tab-content {
-    height: 272px;
+    height: 280px;
 }
 
 .hxui-reset .hx-table.is-narrow-clear>tbody>tr>td {
@@ -45,6 +45,10 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
+}
+
+.hxui-reset .hx-nav-link {
+    font-size: 1rem;
 }
 
 .custom-space-between {
