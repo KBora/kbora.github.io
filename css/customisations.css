@@ -16,15 +16,20 @@
 }
 
 .hx-card#billing-card {
-    position: fixed;
+    position: absolute;
     bottom: 24px;
     right: 24px;
     opacity: 0.9;
-    max-width: 500px;
+    max-width: 450px;    
+    width: 450px;
 }
 
 .hx-card#billing-card:hover {
     opacity: 1;
+}
+
+.hx-card#billing-card .hx-tab-content {
+    height: 272px;
 }
 
 .hxui-reset .hx-table.is-narrow-clear>tbody>tr>td {
@@ -40,4 +45,10 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
+}
+
+.custom-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
 }

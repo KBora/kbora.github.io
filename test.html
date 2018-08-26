@@ -376,111 +376,130 @@
                         </table>
                     </div>
 
-                </div>
+                    <div class="hx-card is-elevate-10 is-border-highlighted is-large success" id="billing-card">
 
-
-
-                <div class="hx-card is-border-highlighted is-medium success" id="billing-card">
-                    <div class="hx-card-header">
-
-                        <div class="hx-tab-header">
+                        <div class="hx-tab-header mb-4 mt-2">
                             <ul class="hx-nav hx-nav-tabs mb-0 ml-4">
                                 <li class="hx-nav-item is-active">
-                                    <a class="hx-nav-link is-active" href="javascript:void(0);">
+                                    <a class="hx-nav-link is-active pl-0" 
+                                    href="javascript:void(0);" 
+                                    id="tab-link-billing">
                                         <span>Billing and Payment</span>
                                     </a>
                                 </li>
                                 <li class="hx-nav-item">
-                                    <a class="hx-nav-link" href="javascript:void(0);">
+                                    <a class="hx-nav-link" 
+                                    href="javascript:void(0);"
+                                    id="tab-link-notes">
                                         <span>Notes</span>
                                     </a>
                                 </li>
                             </ul>
-                            <a class="hx-button is-white billing-card-toggler is-small">
+                            <a class="hx-button is-transparent billing-card-toggler is-small">
                                 <span>Show less</span>
                                 <span class="hx-icon-control">
                                     <i class="icon icon-angle-up"></i>
                                 </span>
                             </a>
-                            <a class="hx-button is-white billing-card-toggler is-small is-hidden">
-                                    <span>Show more</span>
-                                    <span class="hx-icon-control">
-                                        <i class="icon icon-angle-down"></i>
-                                    </span>
-                                </a>
+                            <a class="hx-button is-transparent billing-card-toggler is-small is-hidden">
+                                <span>Show more</span>
+                                <span class="hx-icon-control">
+                                    <i class="icon icon-angle-down"></i>
+                                </span>
+                            </a>
 
                         </div>
 
-                    </div>
+                        <div class="hx-card-content pt-0 pl-3">
+
+                            <div class="hx-tab-container">
 
 
-                    <div class="hx-card-content">
-                        <div class="hx-tab-container">
-                        
+                                <div class="hx-tab-content pt-0 pl-0" id="tab-content-billing">
 
-                            <div class="hx-tab-content" id="tab-billing">
+                                    <div class="hx-columns">
+                                        <div class="hx-column">
 
-                                <div class="hx-columns">
-                                    <div class="hx-column is-8-desktop is-offset-4-desktop">
+                                            <div class="is-text-left">
+                                                <a class="hx-button mb-3">
+                                                    <span>Medicare</span>
+                                                    <span class="hx-icon-control">
+                                                        <i class="icon icon-angle-down"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
 
-                                        <a class="hx-button">
-                                            <span>Medicare</span>
-                                            <span class="hx-icon-control">
-                                                <i class="icon icon-angle-down"></i>
-                                            </span>
-                                        </a>
-
-                                        <table class="hx-table is-narrow-clear">
-                                            <tr>
-                                                <td>
-                                                    <span class="is-text-bold">Total:</span>
-                                                </td>
-                                                <td class="is-text-right">
-                                                    $80.00
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <span class="is-text-bold">Due:</span>
-                                                </td>
-                                                <td class="is-text-right">
-                                                    $80.00
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <span class="is-text-bold">Rebate:</span>
-                                                </td>
-                                                <td class="is-text-right">
-                                                    $32.05
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <span class="is-text-bold">Pay Now:</span>
-                                                </td>
-                                                <td class="is-text-right is-text-bold is-text-primary">
-                                                    $80.00
-                                                </td>
-                                            </tr>
-                                        </table>
+                                            <table class="hx-table is-narrow-clear mb-0">
+                                                <tr>
+                                                    <td>
+                                                        <span class="is-text-bold">Total:</span>
+                                                    </td>
+                                                    <td class="is-text-right">
+                                                        $80.00
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="is-text-bold">Due:</span>
+                                                    </td>
+                                                    <td class="is-text-right">
+                                                        $80.00
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="is-text-bold">Rebate:</span>
+                                                    </td>
+                                                    <td class="is-text-right">
+                                                        $32.05
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span class="is-text-bold">Pay Now:</span>
+                                                    </td>
+                                                    <td class="is-text-right is-text-bold is-text-primary">
+                                                        $80.00
+                                                    </td>
+                                                </tr>
+                                            </table>
 
 
+                                        </div>
+                                    </div>
+                                    <div class="custom-space-between">
+                                        <a class="hx-button is-light">Add to 'batch' and 'transmit'</a>
+                                        <a class="hx-button is-primary">Add to 'batch'</a>
+                                    </div>
 
+                                   
+                                    <div class="custom-space-between mt-3">
+                                        <i class="icon icon-printer is-text-primary"></i>    
+                                        <a class="hx-button is-link">Print an invoice</a>
+                                        <a class="hx-button is-link">Print a claim</a>
+                                        <a class="hx-button is-link">Print a receipt</a>
+                                    </div>
+
+                                </div>
+
+                                <div class="hx-tab-content pt-4 is-hidden" id="tab-content-notes">
+                                    <div class="hx-input-control">
+                                        <textarea name="textarea-sample" class="hx-textarea" placeholder="Notes"></textarea>
+                                        <label for="textarea-sample" class="hx-label">Add a note</label>
                                     </div>
                                 </div>
-                                <a class="hx-button is-light">Add to 'batch' and 'transmit'</a>
-                                <a class="hx-button is-primary">Add to 'batch'</a>
+                                </div>
 
-                            </div>
-
-                            <div class="hx-tab-content is-hidden" id="tab-notes">
-                                Notes text area
-                            </div>
                         </div>
 
+                        
                     </div>
+
+
                 </div>
+
+
+
 
             </div>
         </div>
