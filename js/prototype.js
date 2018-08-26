@@ -647,7 +647,10 @@ $(document).ready(function(){
     });
 
         
-     
+    // collapse linked services
+    setTimeout(function() {
+        $('.linked-services-toggler').trigger('click');
+    }, 2000);
         
 
 });
