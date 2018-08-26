@@ -14,3 +14,23 @@
     padding-top: 0;
     padding-bottom: 0;
 }
+
+.hx-card.billing-card {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    opacity: 0.9;
+    max-width: 500px;
+}
+
+.hx-card.billing-card:hover {
+    opacity: 1;
+}
+
+.hxui-reset .hx-table.is-narrow-clear>tbody>tr>td {
+    padding: 0.25em 0.5em;
+}
+
+.hxui-reset .hx-table.is-narrow-clear>tbody:not(.hx-table-group)>tr:not(.is-selected):not(.is-danger):not(.is-warning):not(.is-success):not(.is-info):nth-child(2n)>td {
+    background-color: initial;
+}
