@@ -646,11 +646,20 @@ $(document).ready(function(){
          });
     });
 
+    // extend tabvle
+
+    var link = $('#billing-table');
+    var offset = link.offset();
+    var top = offset.top;    
+    var bottom = top + link.height();
+    var windowHeight = $(window).height()
+
+    if(bottom < windowHeight) {    
+        link.parent().css('min-height', (windowHeight-top-48).toString() + 'px');
+    }
+
+
         
-    // collapse linked services
-    setTimeout(function() {
-        $('.linked-services-toggler').trigger('click');
-    }, 2000);
         
 
 });
