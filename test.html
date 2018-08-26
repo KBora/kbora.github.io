@@ -14,9 +14,9 @@
         <div class="hx-card">
             <div class="hx-card-header hx-bg-primary">
                 <div class="hx-card-header-title">
-                    <h3 class="is-white my-0">Gabriel Batistuta
+                    <h4 class="is-white my-0">Gabriel Batistuta
                         <span class="is-text-italic">(Gab)</span>
-                    </h1>
+                    </h4>
                 </div>
                 <div class="hx-card-header-icon">
                     <i class="hx-icon is-medium icon-close-empty"></i>
@@ -46,7 +46,7 @@
                         <br> testingemail@medicaldirector.com.au
                     </div>
                     <div class="hx-column is-2 is-text-right">
-                        <a class="hx-button is-link">                            
+                        <a class="hx-button is-link">
                             <span class="">Edit patient info</span>
                         </a>
                     </div>
@@ -190,48 +190,159 @@
             <hr class="is-perforated" />
 
             <div class="hx-card-content">
-                <div class="hx-dropdown">
+                <a class="hx-button">
+                    <span>General Practitioner</span>
+                    <span class="hx-icon-control">
+                        <i class="icon icon-angle-down"></i>
+                    </span>
+                </a>
 
-                    <div class="hx-button-split">
-                        <button type="button" class="hx-button">General Practitioner</button>
-                        <button type="button" class="hx-button">
-                            <i class="icon icon-angle-down"></i>
-                        </button>
-                    </div>
-
-                    <div class="hx-dropdown-menu">
-                        <a class="hx-dropdown-item" href="#">Action</a>
-                        <a class="hx-dropdown-item" href="#">Another action</a>
-                        <a class="hx-dropdown-item" href="#">Something else here</a>
-                    </div>
-                </div>
-
-                <div class="hx-dropdown">
-
-                        <div class="hx-button-split">
-                            <button type="button" class="hx-button">PG001</button>
-                            <button type="button" class="hx-button">
-                                <i class="icon icon-angle-down"></i>
-                            </button>
-                        </div>
-    
-                        <div class="hx-dropdown-menu">
-                            <a class="hx-dropdown-item" href="#">Action</a>
-                            <a class="hx-dropdown-item" href="#">Another action</a>
-                            <a class="hx-dropdown-item" href="#">Something else here</a>
-                        </div>
-
-                </div>
+                <a class="hx-button">
+                    <span>PG0001</span>
+                    <span class="hx-icon-control">
+                        <i class="icon icon-angle-down"></i>
+                    </span>
+                </a>
 
                 <a class="hx-button is-primary">Book a follow-up</a>
-                    
+
             </div>
 
             <hr class="is-perforated" />
 
             <div class="hx-card-content">
-                <table>
+                <table class="hx-table is-narrow">
+                    <colgroup>
+                        <col width="50">
+                        <col width="80">
+                        <col>
+                        <col>
+                        <col width="50">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>
+                                Type
+                            </th>
+                            <th>
+                                Code
+                            </th>
+                            <th>
+                                Description
+                            </th>
+                            <th>
+                                Fee Rate
+                            </th>
+                            <th>
+                                Fee type
+                            </th>
+                            <th>
+                                Invoicing provided
+                            </th>
+                            <th>
+                                Qty
+                            </th>
+                            <th>
+                                Amount ($)
+                            </th>
+                            <th>
+                                Service
+                            </th>
+                            <th class="is-text-right">
+                                Total ($)
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="hx-badge is-primary ml-0">
+                                    <span class="hx-badge-content is-text-italic">M</span>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="hx-badge is-outlined ml-0">
+                                    <span class="hx-badge-content">23</span>
+                                </span>
+                            </td>
+                            <td>
+                                <span class="hx-badge is-outlined ml-0">
+                                    <span class="hx-badge-content">Level B Surgery</span>
+                                </span>
+                            </td>
+                            <td>
+                                Medicare
+                            </td>
+                            <td>
+                                <a class="hx-button is-small">
+                                    <span>Consultation</span>
+                                    <span class="hx-icon-control">
+                                        <i class="icon icon-angle-down"></i>
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                PG001
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                <span class="hx-badge is-outlined">
+                                    <span class="hx-badge-content">$37.05</span>
+                                </span>
+                            </td>
+                            <td>
+                                <a class="hx-button is-small">
+                                    <span class="hx-icon-control">
+                                        <i class="icon icon-angle-down"></i>
+                                    </span>
+                                </a>
+                            </td>
+                            <td class="is-text-right">
+                                $37.05
+                            </td>
+                        </tr>
 
+                        <tr>
+                                <td>
+                                    <span class="hx-badge is-primary ml-0">
+                                        <span class="hx-badge-content is-text-italic">M</span>
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="hx-badge ml-0">
+                                        <span class="hx-badge-content">Code</span>
+                                    </span>
+                                </td>
+                                <td>
+                   
+                                </td>
+                                <td>
+                              
+                                </td>
+                                <td>
+     
+                                </td>
+                                <td>
+                        
+                                </td>
+                                <td>
+                                  
+                                </td>
+                                <td>
+                 
+                                </td>
+                                <td>
+   
+                                </td>
+                                <td>
+                            
+                                </td>
+                            </tr>
+
+
+                    </tbody>
                 </table>
             </div>
 
