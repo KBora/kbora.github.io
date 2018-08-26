@@ -9,3 +9,8 @@
 .is-stepper-clear {
     box-shadow: none !important;
 }
+
+.hxui-reset .hx-stepper .hx-stepper-step {
+    padding-top: 0;
+    padding-bottom: 0;
+}
