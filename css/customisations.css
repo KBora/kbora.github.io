@@ -19,9 +19,15 @@
     position: fixed;
     bottom: 24px;
     right: 24px;
-    opacity: 0.9;
+    opacity: 1;
     max-width: 450px;    
     width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .hx-card#billing-card {
+    opacity: 0.85;
+  }
 }
 
 .hx-card#billing-card:hover {
@@ -387,4 +393,24 @@
   flex: 1 1 auto;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
+}
+
+.linked-services-toggler-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .is-text-left-mobile {
+    text-align: left !important;  
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .hx-card#billing-card {
+    width: calc(100% - 48px);
+    max-width: 100%;
+  }
 }

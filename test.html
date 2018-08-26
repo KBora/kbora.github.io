@@ -31,22 +31,22 @@
                 <!-- Patient details -->
                 <div class="hx-card">
                     <div class="hx-card-content">
-                        <div class="hx-columns">
-                            <div class="hx-column is-1">
+                        <div class="hx-columns is-mobile">
+                            <div class="hx-column is-half-mobile is-1">
                                 <h6 class="mb-2">Gender</h6>
                                 Male
                             </div>
-                            <div class="hx-column is-2">
+                            <div class="hx-column is-half-mobile is-2">
                                 <h6 class="mb-2">Date of birth</h6>
                                 10/02/1969
                             </div>
-                            <div class="hx-column is-3">
+                            <div class="hx-column is-full-mobile is-3">
                                 <h6 class="mb-2">Address</h6>
                                 8 Eligin Street
                                 <br> Louth Park
                                 <br> NSW 2320
                             </div>
-                            <div class="hx-column is-4">
+                            <div class="hx-column is-full-mobile  is-4">
                                 <h6 class="mb-2">Contact information</h6>
                                 <div class="flex-align-center mb-1">
                                         <i class="icon icon-telephone-outline is-primary"></i> 
@@ -64,7 +64,7 @@
                                 </div>
 
                             </div>
-                            <div class="hx-column is-2 is-text-right">
+                            <div class="hx-column is-2 is-text-right is-text-left-mobile">
                                 <a class="hx-button is-link">
                                     <span class="is-hidden-mobile is-hidden-tablet is-block-desktop is-block-widescreen is-block-fullhd">Edit patient info</span>
                                     <span class="is-hidden-desktop">Edit</span>
@@ -78,33 +78,31 @@
 
                     <!-- Linked services -->
                     <div class="hx-card-content pb-2 pt-4">
-                        <div class="hx-columns mb-0">
-                            <div class="hx-column pb-0">
-                                <h6 class="mb-2">Linked services</h6>
+                            
+
+                            <div class="linked-services-toggler-container">
+                                    <h6 class="mb-2">Linked services</h6>
+                                    <a class="hx-button is-white linked-services-toggler pt-0">
+                                            <span>Show less</span>
+                                            <span class="hx-icon-control">
+                                                <i class="icon icon-angle-up"></i>
+                                            </span>
+                                        </a>
+        
+                                        <a class="hx-button is-white linked-services-toggler is-hidden pt-0">
+                                            <span>Show more</span>
+                                            <span class="hx-icon-control">
+                                                <i class="icon icon-angle-down"></i>
+                                            </span>
+                                        </a>
                             </div>
-                            <div class="hx-column pb-0 is-text-right">
+                          
 
-                                <a class="hx-button is-white linked-services-toggler pt-0">
-                                    <span>Show less</span>
-                                    <span class="hx-icon-control">
-                                        <i class="icon icon-angle-up"></i>
-                                    </span>
-                                </a>
-
-                                <a class="hx-button is-white linked-services-toggler is-hidden pt-0">
-                                    <span>Show more</span>
-                                    <span class="hx-icon-control">
-                                        <i class="icon icon-angle-down"></i>
-                                    </span>
-                                </a>
-
-                            </div>
-                        </div>
 
 
 
                         <div id="linked-services-table-wrapper">
-                            <table class="hx-table is-narrow-clear target">
+                            <table class="hx-table is-narrow-clear mb-0 target">
                                 <colgroup>
                                     <col width="15">
                                     <col width="150">
