@@ -64,17 +64,24 @@
                     <hr class="is-perforated" />
 
                     <!-- Linked services -->
-                    <div class="hx-card-content pb-0">
+                    <div class="hx-card-content pb-2 pt-4">
                         <div class="hx-columns mb-0">
                             <div class="hx-column pb-0">
                                 <h6 class="mb-2">Linked Services</h6>
                             </div>
                             <div class="hx-column pb-0 is-text-right">
 
-                                <a class="hx-button is-white">
-                                    <span>Show Less</span>
+                                <a class="hx-button is-white linked-services-toggler pt-0">
+                                    <span>Show less</span>
                                     <span class="hx-icon-control">
                                         <i class="icon icon-angle-up"></i>
+                                    </span>
+                                </a>
+
+                                <a class="hx-button is-white linked-services-toggler is-hidden pt-0">
+                                    <span>Show more</span>
+                                    <span class="hx-icon-control">
+                                        <i class="icon icon-angle-down"></i>
                                     </span>
                                 </a>
 
@@ -83,68 +90,70 @@
 
 
 
-                        <table class="hx-table is-narrow-clear">
-                            <colgroup>
-                                <col width="15">
-                                <col width="150">
-                                <col width="180">
-                                <col width="75">
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <i class="hx-icon is-small icon-square is-primary"></i>
-                                    </td>
-                                    <td>MyHealthRecord</td>
-                                    <td>3995 31457 4</td>
-                                    <td>
-                                        <span class="hx-badge">
-                                            <span class="hx-badge-content is-text-uppercase">Verified</span>
-                                        </span>
-                                    </td>
-                                    <td></td>
-                                </tr>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="hx-icon is-small icon-square is-primary"></i>
-                                    </td>
-                                    <td>Medicare</td>
-                                    <td>3995 31457 4</td>
-                                    <td>
-                                        <span class="hx-badge">
-                                            <span class="hx-badge-content is-text-uppercase">Verified</span>
-                                        </span>
-                                    </td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="hx-icon is-small icon-square is-primary"></i>
-                                    </td>
-                                    <td>DVA</td>
-                                    <td>QX943037</td>
-                                    <td>
-                                        <span class="hx-badge">
-                                            <span class="hx-badge-content is-text-uppercase">Verified</span>
-                                        </span>
-                                    </td>
-                                    <td>exp: 10/02/1969</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <i class="hx-icon is-small icon-square is-primary"></i>
-                                    </td>
-                                    <td>HICAP</td>
-                                    <td>547 - 897 - 414H</td>
-                                    <td>
+                        <div id="linked-services-table-wrapper">
+                            <table class="hx-table is-narrow-clear target">
+                                <colgroup>
+                                    <col width="15">
+                                    <col width="150">
+                                    <col width="180">
+                                    <col width="75">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <i class="hx-icon is-small icon-square is-primary"></i>
+                                        </td>
+                                        <td>MyHealthRecord</td>
+                                        <td>3995 31457 4</td>
+                                        <td>
+                                            <span class="hx-badge">
+                                                <span class="hx-badge-content is-text-uppercase">Verified</span>
+                                            </span>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="hx-icon is-small icon-square is-primary"></i>
+                                        </td>
+                                        <td>Medicare</td>
+                                        <td>3995 31457 4</td>
+                                        <td>
+                                            <span class="hx-badge">
+                                                <span class="hx-badge-content is-text-uppercase">Verified</span>
+                                            </span>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="hx-icon is-small icon-square is-primary"></i>
+                                        </td>
+                                        <td>DVA</td>
+                                        <td>QX943037</td>
+                                        <td>
+                                            <span class="hx-badge">
+                                                <span class="hx-badge-content is-text-uppercase">Verified</span>
+                                            </span>
+                                        </td>
+                                        <td>exp: 10/02/1969</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="hx-icon is-small icon-square is-primary"></i>
+                                        </td>
+                                        <td>HICAP</td>
+                                        <td>547 - 897 - 414H</td>
+                                        <td>
 
-                                    </td>
-                                    <td>exp: 25/82/2018</td>
-                                </tr>
+                                        </td>
+                                        <td>exp: 25/82/2018</td>
+                                    </tr>
 
-                            </tbody>
-                        </table>
+                                </tbody>
+                            </table>
+                        </div>
 
 
                     </div>
@@ -371,92 +380,107 @@
 
 
 
-                <div class="hx-card is-border-highlighted success billing-card">
-                        <div class="hx-card-header">
-            
-                        </div>
-            
-            
-                        <div class="hx-card-content">
-                            <div class="hx-tab-container">
-                                <ul class="hx-nav hx-nav-tabs">
-                                    <li class="hx-nav-item is-active">
-                                        <a class="hx-nav-link is-active" href="javascript:void(0);">
-                                            <span>Billing and Payment</span>
-                                        </a>
-                                    </li>
-                                    <li class="hx-nav-item">
-                                        <a class="hx-nav-link" href="javascript:void(0);">
-                                            <span>Notes</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div class="hx-tab-content">
+                <div class="hx-card is-border-highlighted is-medium success" id="billing-card">
+                    <div class="hx-card-header">
 
-                                    <div class="hx-columns">
-                                        <div class="hx-column is-8-desktop is-offset-4-desktop">
-                                        
-                                            <a class="hx-button">
-                                                <span>Medicare</span>
-                                                <span class="hx-icon-control">
-                                                    <i class="icon icon-angle-down"></i>
-                                                </span>
-                                            </a>
-                                        
-                                            <table class="hx-table is-narrow-clear">
-                                                <tr>
-                                                    <td>
-                                                        <span class="is-text-bold">Total:</span>
-                                                    </td>
-                                                    <td class="is-text-right">
-                                                            <span class="hx-badge is-white is-medium">
-                                                                    <span class="hx-badge-content">$80.00</span>
-                                                                  </span>
-                                                        
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <span class="is-text-bold">Due:</span>
-                                                    </td>
-                                                    <td class="is-text-right">              <span class="hx-badge is-white is-medium">
-                                                            <span class="hx-badge-content">$80.00</span>
-                                                          </span></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <span class="is-text-bold">Rebate:</span>
-                                                    </td>
-                                                    <td class="is-text-right">
-                                                            <span class="hx-badge is-white is-medium">
-                                                                    <span class="hx-badge-content">$32.05</span>
-                                                                  </span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <span class="is-text-bold">Pay Now:</span>
-                                                    </td>
-                                                    <td class="is-text-right">
-                                                        <span class="hx-badge is-outlined is-medium">
-                                                            <span class="hx-badge-content">$80.00</span>
-                                                        </span>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        
-                                        
-                                        
-                                        </div>
-                                        </div>
-                                    <a class="hx-button is-light">Add to 'batch' and 'transmit'</a>
-                                    <a class="hx-button is-primary">Add to 'batch'</a>
-                                     
-                                </div>
-                            </div>
-            
+                        <div class="hx-tab-header">
+                            <ul class="hx-nav hx-nav-tabs mb-0 ml-4">
+                                <li class="hx-nav-item is-active">
+                                    <a class="hx-nav-link is-active" href="javascript:void(0);">
+                                        <span>Billing and Payment</span>
+                                    </a>
+                                </li>
+                                <li class="hx-nav-item">
+                                    <a class="hx-nav-link" href="javascript:void(0);">
+                                        <span>Notes</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="hx-button is-white billing-card-toggler is-small">
+                                <span>Show less</span>
+                                <span class="hx-icon-control">
+                                    <i class="icon icon-angle-up"></i>
+                                </span>
+                            </a>
+                            <a class="hx-button is-white billing-card-toggler is-small is-hidden">
+                                    <span>Show more</span>
+                                    <span class="hx-icon-control">
+                                        <i class="icon icon-angle-down"></i>
+                                    </span>
+                                </a>
+
                         </div>
+
                     </div>
+
+
+                    <div class="hx-card-content">
+                        <div class="hx-tab-container">
+                        
+
+                            <div class="hx-tab-content" id="tab-billing">
+
+                                <div class="hx-columns">
+                                    <div class="hx-column is-8-desktop is-offset-4-desktop">
+
+                                        <a class="hx-button">
+                                            <span>Medicare</span>
+                                            <span class="hx-icon-control">
+                                                <i class="icon icon-angle-down"></i>
+                                            </span>
+                                        </a>
+
+                                        <table class="hx-table is-narrow-clear">
+                                            <tr>
+                                                <td>
+                                                    <span class="is-text-bold">Total:</span>
+                                                </td>
+                                                <td class="is-text-right">
+                                                    $80.00
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="is-text-bold">Due:</span>
+                                                </td>
+                                                <td class="is-text-right">
+                                                    $80.00
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="is-text-bold">Rebate:</span>
+                                                </td>
+                                                <td class="is-text-right">
+                                                    $32.05
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="is-text-bold">Pay Now:</span>
+                                                </td>
+                                                <td class="is-text-right is-text-bold is-text-primary">
+                                                    $80.00
+                                                </td>
+                                            </tr>
+                                        </table>
+
+
+
+                                    </div>
+                                </div>
+                                <a class="hx-button is-light">Add to 'batch' and 'transmit'</a>
+                                <a class="hx-button is-primary">Add to 'batch'</a>
+
+                            </div>
+
+                            <div class="hx-tab-content is-hidden" id="tab-notes">
+                                Notes text area
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -464,7 +488,7 @@
 
 
 
-          
+
 
 
     </section>
@@ -472,6 +496,8 @@
 
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/prototype-scripts.js"></script>
 
 </body>
 

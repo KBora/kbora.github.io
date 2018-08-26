@@ -15,7 +15,7 @@
     padding-bottom: 0;
 }
 
-.hx-card.billing-card {
+.hx-card#billing-card {
     position: fixed;
     bottom: 24px;
     right: 24px;
@@ -23,7 +23,7 @@
     max-width: 500px;
 }
 
-.hx-card.billing-card:hover {
+.hx-card#billing-card:hover {
     opacity: 1;
 }
 
@@ -33,4 +33,11 @@
 
 .hxui-reset .hx-table.is-narrow-clear>tbody:not(.hx-table-group)>tr:not(.is-selected):not(.is-danger):not(.is-warning):not(.is-success):not(.is-info):nth-child(2n)>td {
     background-color: initial;
+}
+
+.hx-tab-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
 }
