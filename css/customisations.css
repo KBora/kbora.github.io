@@ -1,0 +1,11 @@
+.hxui-reset .hx-table>tbody:not(.hx-table-group)>tr>td, .hxui-reset .hx-table>tbody:not(.hx-table-group)>tr>th, .hxui-reset .hx-table>thead>tr>th {
+    font-weight: 300;
+}
+
+.is-align-items-centered {
+    align-items: center;
+}
+
+.is-stepper-clear {
+    box-shadow: none !important;
+}

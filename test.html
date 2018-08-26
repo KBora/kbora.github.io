@@ -5,20 +5,21 @@
     <meta charset="utf-8">
     <title>Medical Director - UI Designer test</title>
     <link rel="stylesheet" href="/css/hxui.css">
+    <link rel="stylesheet" href="/css/customisations.css">
 </head>
 
 <body>
 
     <section class="hx-section">
         <div class="hx-card">
-            <div class="hx-card-header">
+            <div class="hx-card-header hx-bg-primary">
                 <div class="hx-card-header-title">
-                    <h1 class="hx-title">Gabriel Batistuta
+                    <h3 class="is-white my-0">Gabriel Batistuta
                         <span class="is-text-italic">(Gab)</span>
                     </h1>
                 </div>
                 <div class="hx-card-header-icon">
-                    <i class="hx-icon is-large icon-close-empty"></i>
+                    <i class="hx-icon is-medium icon-close-empty"></i>
                 </div>
 
             </div>
@@ -32,7 +33,7 @@
                         <h6 class="mb-2">Date of birth</h6>
                         10/02/1969
                     </div>
-                    <div class="hx-column is-4">
+                    <div class="hx-column is-3">
                         <h6 class="mb-2">Address</h6>
                         8 Eligin Street
                         <br> Louth Park
@@ -44,6 +45,11 @@
                         <br> (+61) 0417 921 557
                         <br> testingemail@medicaldirector.com.au
                     </div>
+                    <div class="hx-column is-2 is-text-right">
+                        <a class="hx-button is-link">                            
+                            <span class="">Edit patient info</span>
+                        </a>
+                    </div>
                 </div>
 
 
@@ -52,75 +58,184 @@
 
             </div>
 
+            <hr class="is-perforated" />
+
+            <div class="hx-card-content">
+                <h6 class="mb-2">Linked Services</h6>
+                <table class="hx-table is-narrow">
+                    <colgroup>
+                        <col width="15">
+                        <col width="150">
+                        <col width="180">
+                        <col width="75">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <i class="hx-icon is-small icon-square is-primary"></i>
+                            </td>
+                            <td>MyHealthRecord</td>
+                            <td>3995 31457 4</td>
+                            <td>
+                                <span class="hx-badge is-info">
+                                    <span class="hx-badge-content is-text-uppercase">Verified</span>
+                                </span>
+                            </td>
+                            <td></td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="hx-icon is-small icon-square is-primary"></i>
+                            </td>
+                            <td>Medicare</td>
+                            <td>3995 31457 4</td>
+                            <td>
+                                <span class="hx-badge is-info">
+                                    <span class="hx-badge-content is-text-uppercase">Verified</span>
+                                </span>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="hx-icon is-small icon-square is-primary"></i>
+                            </td>
+                            <td>DVA</td>
+                            <td>QX943037</td>
+                            <td>
+                                <span class="hx-badge is-info">
+                                    <span class="hx-badge-content is-text-uppercase">Verified</span>
+                                </span>
+                            </td>
+                            <td>exp: 10/02/1969</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="hx-icon is-small icon-square is-primary"></i>
+                            </td>
+                            <td>HICAP</td>
+                            <td>547 - 897 - 414H</td>
+                            <td>
+
+                            </td>
+                            <td>exp: 25/82/2018</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div class="is-text-right">
+                    <a class="hx-button is-white">
+                        <span>Show Less</span>
+                        <span class="hx-icon-control">
+                            <i class="icon icon-angle-up"></i>
+                        </span>
+                    </a>
+                </div>
+
+
+            </div>
 
             <hr class="is-perforated" />
 
             <div class="hx-card-content">
-                <h6 class="mb-2">Linked Services</h4>
-                    <table class="hx-table is-narrow">
-                        <colgroup>
-                            <col width="15">
-                            <col width="150">
-                            <col width="180">
-                            <col width="75">
-                        </colgroup>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <i class="hx-icon is-small icon-square is-primary"></i>
-                                </td>
-                                <td>MyHealthRecord</td>
-                                <td>3995 31457 4</td>
-                                <td>
-                                    <span class="hx-badge is-info">
-                                        <span class="hx-badge-content is-text-uppercase">Verified</span>
+                <div class="hx-columns is-align-items-centered">
+                    <div class="hx-column is-1">
+                        <div class="hx-button-split">
+                            <button type="button" class="hx-button is-primary">Done</button>
+                            <button type="button" class="hx-button is-primary">
+                                <i class="icon icon-angle-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hx-column is-11">
+                        <div class="hx-stepper">
+                            <div class="hx-stepper-header is-stepper-clear">
+                                <div class="hx-stepper-step is-warning">
+                                    <span class="hx-stepper-step-step">
+                                        <i class="hx-icon icon-check-empty"></i>
                                     </span>
-                                </td>
-                                <td></td>
-                            </tr>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <i class="hx-icon is-small icon-square is-primary"></i>
-                                </td>
-                                <td>Medicare</td>
-                                <td>3995 31457 4</td>
-                                <td>
-                                    <span class="hx-badge is-info">
-                                        <span class="hx-badge-content is-text-uppercase">Verified</span>
+                                    <div class="hx-stepper-step-label">Payment</div>
+                                </div>
+                                <hr class="divider is-primary">
+                                <div class="hx-stepper-step is-active">
+                                    <span class="hx-stepper-step-step">
+                                        <i class="hx-icon icon-check-empty"></i>
                                     </span>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <i class="hx-icon is-small icon-square is-primary"></i>
-                                </td>
-                                <td>DVA</td>
-                                <td>QX943037</td>
-                                <td>
-                                    <span class="hx-badge is-info">
-                                        <span class="hx-badge-content is-text-uppercase">Verified</span>
+                                    <div class="hx-stepper-step-label">In Consult</div>
+                                </div>
+                                <hr class="divider">
+                                <div class="hx-stepper-step is-complete">
+                                    <span class="hx-stepper-step-step">
+                                        <i class="hx-icon icon-check-empty"></i>
                                     </span>
-                                </td>
-                                <td>exp: 10/02/1969</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <i class="hx-icon is-small icon-square is-primary"></i>
-                                </td>
-                                <td>HICAP</td>
-                                <td>547 - 897 - 414H</td>
-                                <td>
+                                    <div class="hx-stepper-step-label">Waiting</div>
+                                </div>
+                                <hr class="divider">
+                                <div class="hx-stepper-step is-complete">
+                                    <span class="hx-stepper-step-step">
+                                        <i class="hx-icon icon-check-empty"></i>
+                                    </span>
+                                    <div class="hx-stepper-step-label">Appt booked</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                </td>
-                                <td>exp: 25/82/2018</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
 
             </div>
+
+            <hr class="is-perforated" />
+
+            <div class="hx-card-content">
+                <div class="hx-dropdown">
+
+                    <div class="hx-button-split">
+                        <button type="button" class="hx-button">General Practitioner</button>
+                        <button type="button" class="hx-button">
+                            <i class="icon icon-angle-down"></i>
+                        </button>
+                    </div>
+
+                    <div class="hx-dropdown-menu">
+                        <a class="hx-dropdown-item" href="#">Action</a>
+                        <a class="hx-dropdown-item" href="#">Another action</a>
+                        <a class="hx-dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+
+                <div class="hx-dropdown">
+
+                        <div class="hx-button-split">
+                            <button type="button" class="hx-button">PG001</button>
+                            <button type="button" class="hx-button">
+                                <i class="icon icon-angle-down"></i>
+                            </button>
+                        </div>
+    
+                        <div class="hx-dropdown-menu">
+                            <a class="hx-dropdown-item" href="#">Action</a>
+                            <a class="hx-dropdown-item" href="#">Another action</a>
+                            <a class="hx-dropdown-item" href="#">Something else here</a>
+                        </div>
+
+                </div>
+
+                <a class="hx-button is-primary">Book a follow-up</a>
+                    
+            </div>
+
+            <hr class="is-perforated" />
+
+            <div class="hx-card-content">
+                <table>
+
+                </table>
+            </div>
+
+        </div>
 
         </div>
 
